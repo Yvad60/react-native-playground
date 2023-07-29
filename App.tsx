@@ -1,11 +1,12 @@
 import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
+import { Alert, View } from "react-native";
+import Button from "./components/Button";
 
 const App = () => {
   return (
-    <View className="flex-1 items-center justify-center bg-red-500">
-      <Text className="text-white text-lg">Hello react native</Text>
+    <View className="flex-1 items-center justify-center">
       <StatusBar style="auto" />
+      <Button onPress={() => Alert.alert("Hello words")}>Hello world</Button>
     </View>
   );
 };
